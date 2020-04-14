@@ -312,7 +312,7 @@ function main()
     if not doesDirectoryExist('moonloader/mayor') then createDirectory('moonloader/mayor') end
     sampRegisterChatCommand('mayor', function() show_main_window.v = not show_main_window.v end)
     sampRegisterChatCommand('dv', dv)
-	autoupdate("https://raw.githubusercontent.com/Like2beMike/mayorscript/master/update.json?token=AOI5V3XL2KADKQZQO6FZT3K6SXGBM", '['..string.upper(thisScript().name)..']: ', "https://raw.githubusercontent.com/Like2beMike/mayorscript/master/update.json?token=AOI5V3XL2KADKQZQO6FZT3K6SXGBM")
+	autoupdate("https://raw.githubusercontent.com/Like2beMike/mayorscript/master/mayor.lua", '['..string.upper(thisScript().name)..']: ', "https://raw.githubusercontent.com/Like2beMike/mayorscript/master/mayor.lua")
     while true do wait(0)
         imgui.Process = show_main_window.v 
     end
