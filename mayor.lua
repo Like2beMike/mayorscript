@@ -1,6 +1,6 @@
 script_name('Mayor')
 script_version('14.04.2020')
-script_author('Автор: Vladik Kustov. Доработка: Egor Vozhakovich')
+script_author('РђРІС‚РѕСЂ: Vladik Kustov. Р”РѕСЂР°Р±РѕС‚РєР°: Egor Vozhakovich')
 local key = require 'vkeys'
 local imgui = require 'imgui'
 local encoding = require 'encoding'
@@ -98,149 +98,149 @@ function imgui.OnDrawFrame()
                 end
             end
 		end
-		if imgui.Button(u8'Вводная для охраны', btn_size) then
+		if imgui.Button(u8'Р’РІРѕРґРЅР°СЏ РґР»СЏ РѕС…СЂР°РЅС‹', btn_size) then
 		lecture = lua_thread.create(function()
-		sampSendChat("Итак. Приветствую еще раз. Сейчас я вам расскажу о ваших обязанностях")
+		sampSendChat("РС‚Р°Рє. РџСЂРёРІРµС‚СЃС‚РІСѓСЋ РµС‰Рµ СЂР°Р·. РЎРµР№С‡Р°СЃ СЏ РІР°Рј СЂР°СЃСЃРєР°Р¶Сѓ Рѕ РІР°С€РёС… РѕР±СЏР·Р°РЅРЅРѕСЃС‚СЏС…")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Изначально вы попадаете в отдел Protection Servant и находитесь тут трое суток")
+		sampSendChat("РР·РЅР°С‡Р°Р»СЊРЅРѕ РІС‹ РїРѕРїР°РґР°РµС‚Рµ РІ РѕС‚РґРµР» Protection Servant Рё РЅР°С…РѕРґРёС‚РµСЃСЊ С‚СѓС‚ С‚СЂРѕРµ СЃСѓС‚РѕРє")
 		wait(cfg.main.zaderjka)
-		sampSendChat("В ваши обязанности будет входить охрана мэрии, пеший патруль вокруг здани")
+		sampSendChat("Р’ РІР°С€Рё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё Р±СѓРґРµС‚ РІС…РѕРґРёС‚СЊ РѕС…СЂР°РЅР° РјСЌСЂРёРё, РїРµС€РёР№ РїР°С‚СЂСѓР»СЊ РІРѕРєСЂСѓРі Р·РґР°РЅРё")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Также вы должны обеспечивать порядок на прилегающих территориях.")
+		sampSendChat("РўР°РєР¶Рµ РІС‹ РґРѕР»Р¶РЅС‹ РѕР±РµСЃРїРµС‡РёРІР°С‚СЊ РїРѕСЂСЏРґРѕРє РЅР° РїСЂРёР»РµРіР°СЋС‰РёС… С‚РµСЂСЂРёС‚РѕСЂРёСЏС….")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Например: парковка, ступеньки, вертолетная площадка.")
+		sampSendChat("РќР°РїСЂРёРјРµСЂ: РїР°СЂРєРѕРІРєР°, СЃС‚СѓРїРµРЅСЊРєРё, РІРµСЂС‚РѕР»РµС‚РЅР°СЏ РїР»РѕС‰Р°РґРєР°.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("О постах и конкретных обязанностях прочтите на оф. портале.")
+		sampSendChat("Рћ РїРѕСЃС‚Р°С… Рё РєРѕРЅРєСЂРµС‚РЅС‹С… РѕР±СЏР·Р°РЅРЅРѕСЃС‚СЏС… РїСЂРѕС‡С‚РёС‚Рµ РЅР° РѕС„. РїРѕСЂС‚Р°Р»Рµ.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("/b Ировой сервер I - Гос.Службы - Мэрия - CityHall » Служба безопасности New")
+		sampSendChat("/b РСЂРѕРІРѕР№ СЃРµСЂРІРµСЂ I - Р“РѕСЃ.РЎР»СѓР¶Р±С‹ - РњСЌСЂРёСЏ - CityHall В» РЎР»СѓР¶Р±Р° Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё New")
 		wait(cfg.main.zaderjka)
-		sampSendChat("По окончании испытательного срока вас переведут в отдел State Property Securit.")
+		sampSendChat("РџРѕ РѕРєРѕРЅС‡Р°РЅРёРё РёСЃРїС‹С‚Р°С‚РµР»СЊРЅРѕРіРѕ СЃСЂРѕРєР° РІР°СЃ РїРµСЂРµРІРµРґСѓС‚ РІ РѕС‚РґРµР» State Property Securit.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("В данном отделе вам будет доступен служебный транспорт, а также выезд на стратегические объекты.")
+		sampSendChat("Р’ РґР°РЅРЅРѕРј РѕС‚РґРµР»Рµ РІР°Рј Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ СЃР»СѓР¶РµР±РЅС‹Р№ С‚СЂР°РЅСЃРїРѕСЂС‚, Р° С‚Р°РєР¶Рµ РІС‹РµР·Рґ РЅР° СЃС‚СЂР°С‚РµРіРёС‡РµСЃРєРёРµ РѕР±СЉРµРєС‚С‹.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Вы будете охранять порт или фермы, где граждане наиболее подвержены опасности.")
+		sampSendChat("Р’С‹ Р±СѓРґРµС‚Рµ РѕС…СЂР°РЅСЏС‚СЊ РїРѕСЂС‚ РёР»Рё С„РµСЂРјС‹, РіРґРµ РіСЂР°Р¶РґР°РЅРµ РЅР°РёР±РѕР»РµРµ РїРѕРґРІРµСЂР¶РµРЅС‹ РѕРїР°СЃРЅРѕСЃС‚Рё.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Вы сможете пользоваться, как личным транспортом, чтобы добраться на посты – так и служебным.")
+		sampSendChat("Р’С‹ СЃРјРѕР¶РµС‚Рµ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ, РєР°Рє Р»РёС‡РЅС‹Рј С‚СЂР°РЅСЃРїРѕСЂС‚РѕРј, С‡С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РЅР° РїРѕСЃС‚С‹ вЂ“ С‚Р°Рє Рё СЃР»СѓР¶РµР±РЅС‹Рј.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Повторяю, обязанности и свои полномочия – читайте на оф. портале штата")
+		sampSendChat("РџРѕРІС‚РѕСЂСЏСЋ, РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё Рё СЃРІРѕРё РїРѕР»РЅРѕРјРѕС‡РёСЏ вЂ“ С‡РёС‚Р°Р№С‚Рµ РЅР° РѕС„. РїРѕСЂС‚Р°Р»Рµ С€С‚Р°С‚Р°")
 		wait(cfg.main.zaderjka)
-		sampSendChat("/b Ировой сервер I - Гос.Службы - Мэрия - CityHall » Служба безопасности New.")
+		sampSendChat("/b РСЂРѕРІРѕР№ СЃРµСЂРІРµСЂ I - Р“РѕСЃ.РЎР»СѓР¶Р±С‹ - РњСЌСЂРёСЏ - CityHall В» РЎР»СѓР¶Р±Р° Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё New.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Если за весь период службы в этих отделах вы зарекомендуете себя с хорошей стороны")
+		sampSendChat("Р•СЃР»Рё Р·Р° РІРµСЃСЊ РїРµСЂРёРѕРґ СЃР»СѓР¶Р±С‹ РІ СЌС‚РёС… РѕС‚РґРµР»Р°С… РІС‹ Р·Р°СЂРµРєРѕРјРµРЅРґСѓРµС‚Рµ СЃРµР±СЏ СЃ С…РѕСЂРѕС€РµР№ СЃС‚РѕСЂРѕРЅС‹")
 		wait(cfg.main.zaderjka)
-		sampSendChat("То вас назначат сотрудником Bodyguards")
+		sampSendChat("РўРѕ РІР°СЃ РЅР°Р·РЅР°С‡Р°С‚ СЃРѕС‚СЂСѓРґРЅРёРєРѕРј Bodyguards")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Вы сможете охранять первых лиц штата, а также подписывать контракт на личную охрану.")
+		sampSendChat("Р’С‹ СЃРјРѕР¶РµС‚Рµ РѕС…СЂР°РЅСЏС‚СЊ РїРµСЂРІС‹С… Р»РёС† С€С‚Р°С‚Р°, Р° С‚Р°РєР¶Рµ РїРѕРґРїРёСЃС‹РІР°С‚СЊ РєРѕРЅС‚СЂР°РєС‚ РЅР° Р»РёС‡РЅСѓСЋ РѕС…СЂР°РЅСѓ.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("То есть – вы будете получать не только официальную зарплату, но и оговоренную сумму с клиентом.")
+		sampSendChat("РўРѕ РµСЃС‚СЊ вЂ“ РІС‹ Р±СѓРґРµС‚Рµ РїРѕР»СѓС‡Р°С‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РѕС„РёС†РёР°Р»СЊРЅСѓСЋ Р·Р°СЂРїР»Р°С‚Сѓ, РЅРѕ Рё РѕРіРѕРІРѕСЂРµРЅРЅСѓСЋ СЃСѓРјРјСѓ СЃ РєР»РёРµРЅС‚РѕРј.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Вы станете сотрудниками секретной службы правительства и будете телохранителями.")
+		sampSendChat("Р’С‹ СЃС‚Р°РЅРµС‚Рµ СЃРѕС‚СЂСѓРґРЅРёРєР°РјРё СЃРµРєСЂРµС‚РЅРѕР№ СЃР»СѓР¶Р±С‹ РїСЂР°РІРёС‚РµР»СЊСЃС‚РІР° Рё Р±СѓРґРµС‚Рµ С‚РµР»РѕС…СЂР°РЅРёС‚РµР»СЏРјРё.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Подробнее читайте на оф. портале")
+		sampSendChat("РџРѕРґСЂРѕР±РЅРµРµ С‡РёС‚Р°Р№С‚Рµ РЅР° РѕС„. РїРѕСЂС‚Р°Р»Рµ")
 		wait(cfg.main.zaderjka)
-		sampSendChat("/b Ировой сервер I - Гос.Службы - Мэрия - CityHall » Служба безопасности New.")
+		sampSendChat("/b РСЂРѕРІРѕР№ СЃРµСЂРІРµСЂ I - Р“РѕСЃ.РЎР»СѓР¶Р±С‹ - РњСЌСЂРёСЏ - CityHall В» РЎР»СѓР¶Р±Р° Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё New.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Три лучших сотрудника охраны каждый час будут получать премию.")
+		sampSendChat("РўСЂРё Р»СѓС‡С€РёС… СЃРѕС‚СЂСѓРґРЅРёРєР° РѕС…СЂР°РЅС‹ РєР°Р¶РґС‹Р№ С‡Р°СЃ Р±СѓРґСѓС‚ РїРѕР»СѓС‡Р°С‚СЊ РїСЂРµРјРёСЋ.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Делайте отчеты в рацию, проговаривайте отдел, а также проявляйте активность на работе.")
+		sampSendChat("Р”РµР»Р°Р№С‚Рµ РѕС‚С‡РµС‚С‹ РІ СЂР°С†РёСЋ, РїСЂРѕРіРѕРІР°СЂРёРІР°Р№С‚Рµ РѕС‚РґРµР», Р° С‚Р°РєР¶Рµ РїСЂРѕСЏРІР»СЏР№С‚Рµ Р°РєС‚РёРІРЅРѕСЃС‚СЊ РЅР° СЂР°Р±РѕС‚Рµ.")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Наиболее активные попадут в список кандидатов на должность начальника охраны")
+		sampSendChat("РќР°РёР±РѕР»РµРµ Р°РєС‚РёРІРЅС‹Рµ РїРѕРїР°РґСѓС‚ РІ СЃРїРёСЃРѕРє РєР°РЅРґРёРґР°С‚РѕРІ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ РЅР°С‡Р°Р»СЊРЅРёРєР° РѕС…СЂР°РЅС‹")
 		wait(cfg.main.zaderjka)
-		sampSendChat("Теперь пройдемте за мной – я расставлю вас по постам.")
+		sampSendChat("РўРµРїРµСЂСЊ РїСЂРѕР№РґРµРјС‚Рµ Р·Р° РјРЅРѕР№ вЂ“ СЏ СЂР°СЃСЃС‚Р°РІР»СЋ РІР°СЃ РїРѕ РїРѕСЃС‚Р°Рј.")
 		    end)
 		end
-		if imgui.Button(u8'Набор в мэрию №1.', btn_size) then
+		if imgui.Button(u8'РќР°Р±РѕСЂ РІ РјСЌСЂРёСЋ в„–1.', btn_size) then
 			lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Добрый день, уважаемые жители и гости штата, минуточку внимания!")
+				sampSendChat("/gov [City Hall]: Р”РѕР±СЂС‹Р№ РґРµРЅСЊ, СѓРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё Рё РіРѕСЃС‚Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚РѕС‡РєСѓ РІРЅРёРјР°РЅРёСЏ!")
 				wait(cfg.main.zaderjka)
-				sampSendChat('/gov [City Hall]: Сейчас в стенах Мэрии проходит собеседование на должность Секретаря/Охранника.')
+				sampSendChat('/gov [City Hall]: РЎРµР№С‡Р°СЃ РІ СЃС‚РµРЅР°С… РњСЌСЂРёРё РїСЂРѕС…РѕРґРёС‚ СЃРѕР±РµСЃРµРґРѕРІР°РЅРёРµ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ РЎРµРєСЂРµС‚Р°СЂСЏ/РћС…СЂР°РЅРЅРёРєР°.')
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Критерии: Прописка от 5-ти лет в штате, опрятный вид, комплект лицензий. Ждём вас!")
+				sampSendChat("/gov [City Hall]: РљСЂРёС‚РµСЂРёРё: РџСЂРѕРїРёСЃРєР° РѕС‚ 5-С‚Рё Р»РµС‚ РІ С€С‚Р°С‚Рµ, РѕРїСЂСЏС‚РЅС‹Р№ РІРёРґ, РєРѕРјРїР»РµРєС‚ Р»РёС†РµРЅР·РёР№. Р–РґС‘Рј РІР°СЃ!")
 			end)
 		end
-				if imgui.Button(u8'Набор в мэрию №2.', btn_size) then
+				if imgui.Button(u8'РќР°Р±РѕСЂ РІ РјСЌСЂРёСЋ в„–2.', btn_size) then
 				lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Доброго времени суток, уважаемые жители и гости штата, минуточку внимания!")
+				sampSendChat("/gov [City Hall]: Р”РѕР±СЂРѕРіРѕ РІСЂРµРјРµРЅРё СЃСѓС‚РѕРє, СѓРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё Рё РіРѕСЃС‚Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚РѕС‡РєСѓ РІРЅРёРјР°РЅРёСЏ!")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Сейчас в стенах Мэрии проходит собеседование на должность Секретаря/Охранника.")
+				sampSendChat("/gov [City Hall]: РЎРµР№С‡Р°СЃ РІ СЃС‚РµРЅР°С… РњСЌСЂРёРё РїСЂРѕС…РѕРґРёС‚ СЃРѕР±РµСЃРµРґРѕРІР°РЅРёРµ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ РЎРµРєСЂРµС‚Р°СЂСЏ/РћС…СЂР°РЅРЅРёРєР°.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Критерии: Прописка от 5-ти лет в штате, опрятный вид, комплект лицензий. Ждём вас!")
+				sampSendChat("/gov [City Hall]: РљСЂРёС‚РµСЂРёРё: РџСЂРѕРїРёСЃРєР° РѕС‚ 5-С‚Рё Р»РµС‚ РІ С€С‚Р°С‚Рµ, РѕРїСЂСЏС‚РЅС‹Р№ РІРёРґ, РєРѕРјРїР»РµРєС‚ Р»РёС†РµРЅР·РёР№. Р–РґС‘Рј РІР°СЃ!")
 			end)
 		end
-		        if imgui.Button(u8'Приёмная Мэрия', btn_size) then
+		        if imgui.Button(u8'РџСЂРёС‘РјРЅР°СЏ РњСЌСЂРёСЏ', btn_size) then
 		        lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые жители штата, минуту внимания! Приёмная мэра открыта для ваших обращений.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚Сѓ РІРЅРёРјР°РЅРёСЏ! РџСЂРёС‘РјРЅР°СЏ РјСЌСЂР° РѕС‚РєСЂС‹С‚Р° РґР»СЏ РІР°С€РёС… РѕР±СЂР°С‰РµРЅРёР№.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Вы можете оставить заявление на финансовую поддержку, субсидию, пенсию и другую помощь.")
+				sampSendChat("/gov [City Hall]: Р’С‹ РјРѕР¶РµС‚Рµ РѕСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІР»РµРЅРёРµ РЅР° С„РёРЅР°РЅСЃРѕРІСѓСЋ РїРѕРґРґРµСЂР¶РєСѓ, СЃСѓР±СЃРёРґРёСЋ, РїРµРЅСЃРёСЋ Рё РґСЂСѓРіСѓСЋ РїРѕРјРѕС‰СЊ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [Cty Hall]: Подробные требования и критерии описаны на официальном портале мэрии. Спасибо за внимание.")
+				sampSendChat("/gov [Cty Hall]: РџРѕРґСЂРѕР±РЅС‹Рµ С‚СЂРµР±РѕРІР°РЅРёСЏ Рё РєСЂРёС‚РµСЂРёРё РѕРїРёСЃР°РЅС‹ РЅР° РѕС„РёС†РёР°Р»СЊРЅРѕРј РїРѕСЂС‚Р°Р»Рµ РјСЌСЂРёРё. РЎРїР°СЃРёР±Рѕ Р·Р° РІРЅРёРјР°РЅРёРµ.")
 	
 			end)
 		end
-		        if imgui.Button(u8'Поддержка бизнесов.', btn_size) then
+		        if imgui.Button(u8'РџРѕРґРґРµСЂР¶РєР° Р±РёР·РЅРµСЃРѕРІ.', btn_size) then
 		        lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые жители штата, минуту внимания! Обращаемся к представителям малого бизнеса.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚Сѓ РІРЅРёРјР°РЅРёСЏ! РћР±СЂР°С‰Р°РµРјСЃСЏ Рє РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏРј РјР°Р»РѕРіРѕ Р±РёР·РЅРµСЃР°.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: В данный момент действует система доставок товаров на ваши склады.")
+				sampSendChat("/gov [City Hall]: Р’ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РґРµР№СЃС‚РІСѓРµС‚ СЃРёСЃС‚РµРјР° РґРѕСЃС‚Р°РІРѕРє С‚РѕРІР°СЂРѕРІ РЅР° РІР°С€Рё СЃРєР»Р°РґС‹.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [Cty Hall]: Просьба оставлять заявление на официальном портале мэрии. Спасибо за внимание.")
+				sampSendChat("/gov [Cty Hall]: РџСЂРѕСЃСЊР±Р° РѕСЃС‚Р°РІР»СЏС‚СЊ Р·Р°СЏРІР»РµРЅРёРµ РЅР° РѕС„РёС†РёР°Р»СЊРЅРѕРј РїРѕСЂС‚Р°Р»Рµ РјСЌСЂРёРё. РЎРїР°СЃРёР±Рѕ Р·Р° РІРЅРёРјР°РЅРёРµ.")
 			end)
 		end
-		        if imgui.Button(u8'Субсидия.', btn_size) then
+		        if imgui.Button(u8'РЎСѓР±СЃРёРґРёСЏ.', btn_size) then
 		        lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые граждане, минуту внимания! Введена система субсидий на проживание в отелях.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ РіСЂР°Р¶РґР°РЅРµ, РјРёРЅСѓС‚Сѓ РІРЅРёРјР°РЅРёСЏ! Р’РІРµРґРµРЅР° СЃРёСЃС‚РµРјР° СЃСѓР±СЃРёРґРёР№ РЅР° РїСЂРѕР¶РёРІР°РЅРёРµ РІ РѕС‚РµР»СЏС….")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Работает режим компенсации аренды гостиничных номеров в размере 50 процентов.")
+				sampSendChat("/gov [City Hall]: Р Р°Р±РѕС‚Р°РµС‚ СЂРµР¶РёРј РєРѕРјРїРµРЅСЃР°С†РёРё Р°СЂРµРЅРґС‹ РіРѕСЃС‚РёРЅРёС‡РЅС‹С… РЅРѕРјРµСЂРѕРІ РІ СЂР°Р·РјРµСЂРµ 50 РїСЂРѕС†РµРЅС‚РѕРІ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [Cty Hall]: Для получения детальной информации – посетите официальный портал мэрии. Спасибо за внимание.")
+				sampSendChat("/gov [Cty Hall]: Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРµС‚Р°Р»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё вЂ“ РїРѕСЃРµС‚РёС‚Рµ РѕС„РёС†РёР°Р»СЊРЅС‹Р№ РїРѕСЂС‚Р°Р» РјСЌСЂРёРё. РЎРїР°СЃРёР±Рѕ Р·Р° РІРЅРёРјР°РЅРёРµ.")
 			end)
 		end
-			    if imgui.Button(u8'Юридическая помощь.', btn_size) then
+			    if imgui.Button(u8'Р®СЂРёРґРёС‡РµСЃРєР°СЏ РїРѕРјРѕС‰СЊ.', btn_size) then
 		        lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые жители штата, минуту внимания! В штате действует бесплатная правовая помощь.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚Сѓ РІРЅРёРјР°РЅРёСЏ! Р’ С€С‚Р°С‚Рµ РґРµР№СЃС‚РІСѓРµС‚ Р±РµСЃРїР»Р°С‚РЅР°СЏ РїСЂР°РІРѕРІР°СЏ РїРѕРјРѕС‰СЊ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Юристы ознакомятся с вашими жалобами и помогут составить иск на нарушителя.")
+				sampSendChat("/gov [City Hall]: Р®СЂРёСЃС‚С‹ РѕР·РЅР°РєРѕРјСЏС‚СЃСЏ СЃ РІР°С€РёРјРё Р¶Р°Р»РѕР±Р°РјРё Рё РїРѕРјРѕРіСѓС‚ СЃРѕСЃС‚Р°РІРёС‚СЊ РёСЃРє РЅР° РЅР°СЂСѓС€РёС‚РµР»СЏ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [Cty Hall]: Детальная информация описана в приемной мэра на официальном портале штата. Спасибо за внимание.")
+				sampSendChat("/gov [Cty Hall]: Р”РµС‚Р°Р»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ РѕРїРёСЃР°РЅР° РІ РїСЂРёРµРјРЅРѕР№ РјСЌСЂР° РЅР° РѕС„РёС†РёР°Р»СЊРЅРѕРј РїРѕСЂС‚Р°Р»Рµ С€С‚Р°С‚Р°. РЎРїР°СЃРёР±Рѕ Р·Р° РІРЅРёРјР°РЅРёРµ.")
 			end)
 		end
-				if imgui.Button(u8'Вакансии на охранника.', btn_size) then
+				if imgui.Button(u8'Р’Р°РєР°РЅСЃРёРё РЅР° РѕС…СЂР°РЅРЅРёРєР°.', btn_size) then
 		        lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые жители штата, минуту внимания! Открыты вакансии в правительственные отделы охраны.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё С€С‚Р°С‚Р°, РјРёРЅСѓС‚Сѓ РІРЅРёРјР°РЅРёСЏ! РћС‚РєСЂС‹С‚С‹ РІР°РєР°РЅСЃРёРё РІ РїСЂР°РІРёС‚РµР»СЊСЃС‚РІРµРЅРЅС‹Рµ РѕС‚РґРµР»С‹ РѕС…СЂР°РЅС‹.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Идет набор в охрану мэрии, стратегических объектов, в отдел личной безопасности.")
+				sampSendChat("/gov [City Hall]: РРґРµС‚ РЅР°Р±РѕСЂ РІ РѕС…СЂР°РЅСѓ РјСЌСЂРёРё, СЃС‚СЂР°С‚РµРіРёС‡РµСЃРєРёС… РѕР±СЉРµРєС‚РѕРІ, РІ РѕС‚РґРµР» Р»РёС‡РЅРѕР№ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [Cty Hall]: Критерии и требования оглашены на официальном портале мэрии. Спасибо за внимание.")
+				sampSendChat("/gov [Cty Hall]: РљСЂРёС‚РµСЂРёРё Рё С‚СЂРµР±РѕРІР°РЅРёСЏ РѕРіР»Р°С€РµРЅС‹ РЅР° РѕС„РёС†РёР°Р»СЊРЅРѕРј РїРѕСЂС‚Р°Р»Рµ РјСЌСЂРёРё. РЎРїР°СЃРёР±Рѕ Р·Р° РІРЅРёРјР°РЅРёРµ.")
 		    end)
 		end
-		        if imgui.Button(u8'Окончание набора.', btn_size) then
+		        if imgui.Button(u8'РћРєРѕРЅС‡Р°РЅРёРµ РЅР°Р±РѕСЂР°.', btn_size) then
 			    lecture = lua_thread.create(function()
-				sampSendChat("/gov [City Hall]: Уважаемые жители и гости нашего штата, минуточку внимания.")
+				sampSendChat("/gov [City Hall]: РЈРІР°Р¶Р°РµРјС‹Рµ Р¶РёС‚РµР»Рё Рё РіРѕСЃС‚Рё РЅР°С€РµРіРѕ С€С‚Р°С‚Р°, РјРёРЅСѓС‚РѕС‡РєСѓ РІРЅРёРјР°РЅРёСЏ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Собеседование на должность Секретаря/Охранника подходит к концу. Но не расстраивайтесь.")
+				sampSendChat("/gov [City Hall]: РЎРѕР±РµСЃРµРґРѕРІР°РЅРёРµ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ РЎРµРєСЂРµС‚Р°СЂСЏ/РћС…СЂР°РЅРЅРёРєР° РїРѕРґС…РѕРґРёС‚ Рє РєРѕРЅС†Сѓ. РќРѕ РЅРµ СЂР°СЃСЃС‚СЂР°РёРІР°Р№С‚РµСЃСЊ.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Так как на оф. портале 'City Hall' открыты заявления на должность Адвоката.")
+				sampSendChat("/gov [City Hall]: РўР°Рє РєР°Рє РЅР° РѕС„. РїРѕСЂС‚Р°Р»Рµ 'City Hall' РѕС‚РєСЂС‹С‚С‹ Р·Р°СЏРІР»РµРЅРёСЏ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ РђРґРІРѕРєР°С‚Р°.")
 				wait(cfg.main.zaderjka)
-				sampSendChat("/gov [City Hall]: Высокие зарплаты, материальные поощрения для сотрудников, дружный коллектив. Мы ждём тебя!")
+				sampSendChat("/gov [City Hall]: Р’С‹СЃРѕРєРёРµ Р·Р°СЂРїР»Р°С‚С‹, РјР°С‚РµСЂРёР°Р»СЊРЅС‹Рµ РїРѕРѕС‰СЂРµРЅРёСЏ РґР»СЏ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ, РґСЂСѓР¶РЅС‹Р№ РєРѕР»Р»РµРєС‚РёРІ. РњС‹ Р¶РґС‘Рј С‚РµР±СЏ!")
 			end)
 		end	
-		if imgui.Button(u8 'Сообщить о ошибке / баге', btn_size) then 
+		if imgui.Button(u8 'РЎРѕРѕР±С‰РёС‚СЊ Рѕ РѕС€РёР±РєРµ / Р±Р°РіРµ', btn_size) then 
 		            showCursor(false)
-			sampAddChatMessage(' {DC143C}[Mayor]{ffffff} Найдите меня в игре {00F0FD}/id Vladik_Kustov{ffffff} или же напишите в ЛС Вконтакте {00F0FD}vk.com/rumistik', 0xae433d)
+			sampAddChatMessage(' {DC143C}[Mayor]{ffffff} РќР°Р№РґРёС‚Рµ РјРµРЅСЏ РІ РёРіСЂРµ {00F0FD}/id Vladik_Kustov{ffffff} РёР»Рё Р¶Рµ РЅР°РїРёС€РёС‚Рµ РІ Р›РЎ Р’РєРѕРЅС‚Р°РєС‚Рµ {00F0FD}vk.com/rumistik', 0xae433d)
 					
 		end
-		if imgui.Button(u8'Перезагрузить скрипт', btn_size) then
+		if imgui.Button(u8'РџРµСЂРµР·Р°РіСЂСѓР·РёС‚СЊ СЃРєСЂРёРїС‚', btn_size) then
 			showCursor(false)
 			thisScript():reload()
         end
 		imgui.Separator()
-        if imgui.Button(u8'Остановить лекцию', btn_size) then
-            sampAddChatMessage(' {DC143C}[Mayor]{ffffff} Лекция остановлена.', 0xae433d)
+        if imgui.Button(u8'РћСЃС‚Р°РЅРѕРІРёС‚СЊ Р»РµРєС†РёСЋ', btn_size) then
+            sampAddChatMessage(' {DC143C}[Mayor]{ffffff} Р›РµРєС†РёСЏ РѕСЃС‚Р°РЅРѕРІР»РµРЅР°.', 0xae433d)
             lecture:terminate()
 		end
 		imgui.Separator()
 		local waitint = imgui.ImInt(cfg.main.zaderjka)
-		if imgui.SliderInt(u8 'Задержка', waitint, 1000, 10000) then
+		if imgui.SliderInt(u8 'Р—Р°РґРµСЂР¶РєР°', waitint, 1000, 10000) then
 			cfg.main.zaderjka = waitint.v
 			inicfg.save(config, 'mayor.ini')
 		end
@@ -249,7 +249,7 @@ function imgui.OnDrawFrame()
 end
 
 --UPDATE SCRIPT!!!!!!!!!
--- НЕ ТРОГАТЬ!!!!
+-- РќР• РўР РћР“РђРўР¬!!!!
 
 function autoupdate(json_url, prefix, url)
   local dlstatus = require('moonloader').download_status
@@ -270,21 +270,21 @@ function autoupdate(json_url, prefix, url)
               lua_thread.create(function(prefix)
                 local dlstatus = require('moonloader').download_status
                 local color = -1
-                sampAddChatMessage((prefix..'Обнаружено обновление. Пытаюсь обновиться c '..thisScript().version..' на '..updateversion), color)
+                sampAddChatMessage((prefix..'РћР±РЅР°СЂСѓР¶РµРЅРѕ РѕР±РЅРѕРІР»РµРЅРёРµ. РџС‹С‚Р°СЋСЃСЊ РѕР±РЅРѕРІРёС‚СЊСЃСЏ c '..thisScript().version..' РЅР° '..updateversion), color)
                 wait(250)
                 downloadUrlToFile(updatelink, thisScript().path,
                   function(id3, status1, p13, p23)
                     if status1 == dlstatus.STATUS_DOWNLOADINGDATA then
-                      print(string.format('Загружено %d из %d.', p13, p23))
+                      print(string.format('Р—Р°РіСЂСѓР¶РµРЅРѕ %d РёР· %d.', p13, p23))
                     elseif status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
-                      print('Загрузка обновления завершена.')
-                      sampAddChatMessage((prefix..'Обновление завершено!'), color)
+                      print('Р—Р°РіСЂСѓР·РєР° РѕР±РЅРѕРІР»РµРЅРёСЏ Р·Р°РІРµСЂС€РµРЅР°.')
+                      sampAddChatMessage((prefix..'РћР±РЅРѕРІР»РµРЅРёРµ Р·Р°РІРµСЂС€РµРЅРѕ!'), color)
                       goupdatestatus = true
                       lua_thread.create(function() wait(500) thisScript():reload() end)
                     end
                     if status1 == dlstatus.STATUSEX_ENDDOWNLOAD then
                       if goupdatestatus == nil then
-                        sampAddChatMessage((prefix..'Обновление прошло неудачно. Запускаю устаревшую версию..'), color)
+                        sampAddChatMessage((prefix..'РћР±РЅРѕРІР»РµРЅРёРµ РїСЂРѕС€Р»Рѕ РЅРµСѓРґР°С‡РЅРѕ. Р—Р°РїСѓСЃРєР°СЋ СѓСЃС‚Р°СЂРµРІС€СѓСЋ РІРµСЂСЃРёСЋ..'), color)
                         update = false
                       end
                     end
@@ -294,11 +294,11 @@ function autoupdate(json_url, prefix, url)
               )
             else
               update = false
-              print('v'..thisScript().version..': Обновление не требуется.')
+              print('v'..thisScript().version..': РћР±РЅРѕРІР»РµРЅРёРµ РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ.')
             end
           end
         else
-          print('v'..thisScript().version..': Не могу проверить обновление. Смиритесь или проверьте самостоятельно на '..url)
+          print('v'..thisScript().version..': РќРµ РјРѕРіСѓ РїСЂРѕРІРµСЂРёС‚СЊ РѕР±РЅРѕРІР»РµРЅРёРµ. РЎРјРёСЂРёС‚РµСЃСЊ РёР»Рё РїСЂРѕРІРµСЂСЊС‚Рµ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ РЅР° '..url)
           update = false
         end
       end
@@ -310,9 +310,9 @@ end
 --main
 function main()
 	while not isSampAvailable() do wait(0) end
-	sampAddChatMessage(' {DC143C}Mayor |{ffffff} Автор скрипта {DC143C}Vladik Kustov и Egor Vozhakovich.', 0xae433d)
-	sampAddChatMessage(' {DC143C}Mayor |{ffffff} Скрипт успешно загружен.', 0xae433d)
-	sampAddChatMessage(string.format(" {DC143C}Mayor |{ffffff} Версия скрипта  %s", thisScript().version), 0xae433d)
+	sampAddChatMessage(' {DC143C}Mayor |{ffffff} РђРІС‚РѕСЂ СЃРєСЂРёРїС‚Р° {DC143C}Vladik Kustov Рё Egor Vozhakovich.', 0xae433d)
+	sampAddChatMessage(' {DC143C}Mayor |{ffffff} РЎРєСЂРёРїС‚ СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅ.', 0xae433d)
+	sampAddChatMessage(string.format(" {DC143C}Mayor |{ffffff} Р’РµСЂСЃРёСЏ СЃРєСЂРёРїС‚Р°  %s", thisScript().version), 0xae433d)
 	cfg = inicfg.load(config, 'mayor.ini')
     if not doesDirectoryExist('moonloader/mayor') then createDirectory('moonloader/mayor') end
     --comands
@@ -330,21 +330,21 @@ function invite(param)
 	local id = tonumber(param)
 	if id then
 	lecture = lua_thread.create(function()	
-		sampSendChat('/me достал чистое удостоверение из нижнего шкафчика')
+		sampSendChat('/me РґРѕСЃС‚Р°Р» С‡РёСЃС‚РѕРµ СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРµ РёР· РЅРёР¶РЅРµРіРѕ С€РєР°С„С‡РёРєР°')
 		wait(3000)
-		sampSendChat('/me открыл удостоверение')
+		sampSendChat('/me РѕС‚РєСЂС‹Р» СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРµ')
 		wait(3000)
-		sampSendChat('/do Удостоверение открыто.')
+		sampSendChat('/do РЈРґРѕСЃС‚РѕРІРµСЂРµРЅРёРµ РѕС‚РєСЂС‹С‚Рѕ.')
 		wait(3000)
-		sampSendChat('/me открыл паспорт гражданина, после чего пробежался глазами по тексту')
+		sampSendChat('/me РѕС‚РєСЂС‹Р» РїР°СЃРїРѕСЂС‚ РіСЂР°Р¶РґР°РЅРёРЅР°, РїРѕСЃР»Рµ С‡РµРіРѕ РїСЂРѕР±РµР¶Р°Р»СЃСЏ РіР»Р°Р·Р°РјРё РїРѕ С‚РµРєСЃС‚Сѓ')
 		wait(3000)
-		sampSendChat('/do Ознакомлен.')
+		sampSendChat('/do РћР·РЅР°РєРѕРјР»РµРЅ.')
 		wait(3000)
-		sampSendChat('/me взял печать и поставил печать в удостоверении')
+		sampSendChat('/me РІР·СЏР» РїРµС‡Р°С‚СЊ Рё РїРѕСЃС‚Р°РІРёР» РїРµС‡Р°С‚СЊ РІ СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРё')
 		wait(3000)
-		sampSendChat('/do В удостоверении стоит печать "Mayor".')
+		sampSendChat('/do Р’ СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРё СЃС‚РѕРёС‚ РїРµС‡Р°С‚СЊ "Mayor".')
 		wait(3000)
-		sampSendChat('/me передал удостоверение и новый комплект формы впереди стоящему человеку')
+		sampSendChat('/me РїРµСЂРµРґР°Р» СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРµ Рё РЅРѕРІС‹Р№ РєРѕРјРїР»РµРєС‚ С„РѕСЂРјС‹ РІРїРµСЂРµРґРё СЃС‚РѕСЏС‰РµРјСѓ С‡РµР»РѕРІРµРєСѓ')
 		wait(3000)
 		sampSendChat(string.format('/invite %s', id))
 	end)
@@ -357,21 +357,21 @@ function uninvite(param)
 	local id, reason = param:match('(%d+) (.+)')
 	if id and reason then
 		lecture = lua_thread.create(function()
-			sampSendChat('/me достал КПК из правого кармана брюк')
+			sampSendChat('/me РґРѕСЃС‚Р°Р» РљРџРљ РёР· РїСЂР°РІРѕРіРѕ РєР°СЂРјР°РЅР° Р±СЂСЋРє')
 			wait(3000)
-			sampSendChat('/do КПК находится в правой руке')
+			sampSendChat('/do РљРџРљ РЅР°С…РѕРґРёС‚СЃСЏ РІ РїСЂР°РІРѕР№ СЂСѓРєРµ')
 			wait(3000)
-			sampSendChat('/me вошел в базу данных City Hall')
+			sampSendChat('/me РІРѕС€РµР» РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… City Hall')
 			wait(3000)
-			sampSendChat('/do На экране отобразился ключ безопасности.')
+			sampSendChat('/do РќР° СЌРєСЂР°РЅРµ РѕС‚РѕР±СЂР°Р·РёР»СЃСЏ РєР»СЋС‡ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.')
 			wait(3000)
-			sampSendChat('/me ввел пин-код на экран')
+			sampSendChat('/me РІРІРµР» РїРёРЅ-РєРѕРґ РЅР° СЌРєСЂР°РЅ')
 			wait(3000)
-			sampSendChat('/me ввел в поиск базы данных сотрудника')
+			sampSendChat('/me РІРІРµР» РІ РїРѕРёСЃРє Р±Р°Р·С‹ РґР°РЅРЅС‹С… СЃРѕС‚СЂСѓРґРЅРёРєР°')
 			wait(3000)
-			sampSendChat('/do На экране отобразилась персональная информацию об сотруднике')
+			sampSendChat('/do РќР° СЌРєСЂР°РЅРµ РѕС‚РѕР±СЂР°Р·РёР»Р°СЃСЊ РїРµСЂСЃРѕРЅР°Р»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЋ РѕР± СЃРѕС‚СЂСѓРґРЅРёРєРµ')
 			wait(3000)
-			sampSendChat('/me отредактировал информацию о сотруднике как "удалить"')
+			sampSendChat('/me РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°Р» РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРѕС‚СЂСѓРґРЅРёРєРµ РєР°Рє "СѓРґР°Р»РёС‚СЊ"')
 			wait(3000)
 			sampSendChat(string.format('/uninvite %s %s', id, reason))
 		end)
